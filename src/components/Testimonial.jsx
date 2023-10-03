@@ -1,10 +1,10 @@
+import '../styles/Testimonial.css'
 
 function Testimonial({desc, name}) {
   return (
     <div  className="testimonial">
         <div>
-            <p>{desc}
-            </p>
+            <blockquote>{desc}</blockquote>
             <p>{name}</p>
           </div>
      </div>

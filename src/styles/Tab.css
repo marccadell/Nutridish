@@ -1,0 +1,164 @@
+.tab-container {
+    width: 600px;
+    background-color: white;
+    padding: 30px;
+    box-shadow: 0 2px 16px rgba(0,0,0,.1);
+    border-top-right-radius: var(--br);
+    border-bottom-right-radius: var(--br);
+    height: 100%;
+    position: relative;
+}
+
+.tabs{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 2px solid white;
+    position: relative;
+}
+
+.tabs .tab{
+    flex-grow: 1;
+    font-size: 1.6rem;
+    font-weight: 600;
+    background: white;
+    padding: 18px;
+    border: none;
+    cursor: pointer;
+
+}
+
+.tabs .tab:nth-child(2) {
+    border-left: none;
+}
+
+.tabs .tab:nth-child(3) {
+    border-left: none;
+}
+
+.tabs .tab.active-tab{
+    color: var(--clr-btn);
+
+}
+
+.content-container {
+    padding: 20px;
+}
+
+.content-container .content {
+    display: none;
+}
+
+.content-container .content.active-content {
+    display: block;
+}
+
+.content-container .content h2 {
+    margin-bottom: 10px;
+}
+
+.content-desc {
+    padding-top: 1em;
+}
+
+.ingredient-list {
+    padding-left: 20px;
+    list-style-type: none; /* Esto quitará los puntos predeterminados */
+  }
+  
+  .ingredient-list li {
+    margin-bottom: 10px;
+    color: #000; /* Texto en color negro */
+    position: relative; /* Esto permitirá posicionar el punto verde relativo al elemento li */
+  }
+  
+  .ingredient-list li:before {
+    content: ""; /* Esto es necesario para el pseudo-elemento */
+    width: 8px; /* Tamaño del punto */
+    height: 8px;
+    background-color: var(--clr-btn); /* Punto verde */
+    border-radius: 50%; /* Hace que el punto sea circular */
+    position: absolute; /* Absoluto relativo al li gracias al 'position: relative' anterior */
+    left: -15px; /* Posiciona el punto a la izquierda del texto */
+    top: 50%; /* Centra verticalmente el punto en el medio del texto */
+    transform: translateY(-50%); /* Ajuste final para centrar verticalmente */
+  }
+  
+  .time-servings-container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-top: 10px;
+  }
+
+  .time-container,
+  .servings-container {
+      flex: 1;
+      text-align: center;
+  }
+
+ 
+
+  /* Estilo para el diseño general de la etiqueta nutricional */
+.nutrition-label {
+    border: 1px solid #dcdcdc;
+    padding: 10px;
+    width: 300px;
+    font-family: 'Arial', sans-serif;
+    background-color: #f7f7f7;
+}
+
+/* Título de la etiqueta */
+.nutrition-label h2 {
+    text-align: center;
+    font-weight: bold;
+    border-bottom: 2px solid #dcdcdc;
+    padding-bottom: 5px;
+}
+
+/* Estilo para cada fila de datos nutricionales */
+.nutrition-row {
+    display: flex;
+    justify-content: space-between;
+    padding: 5px 0;
+    border-bottom: 1px dotted #dcdcdc;
+}
+
+/* Estilo para la etiqueta y el valor en cada fila */
+.nutrition-row span {
+    flex: 1;
+}
+
+.nutrition-row span.label {
+    font-weight: bold;
+}
+
+/* Estilo para el valor en cada fila */
+.nutrition-row span.value {
+    text-align: right;
+}
+
+
+.small {
+    text-transform: uppercase;
+    font-size: 1.2rem;
+    font-weight: bold;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .smallT .allergensT {
+    position: absolute;
+    bottom: 10px; /* Espaciado desde la parte inferior */
+    right: 10px; /* Espaciado desde la derecha */
+    display: flex;
+    align-items: center;
+    gap: 0.5em;
+  }
+  
+  .smallT img {
+    width: 50px;
+    height: auto;
+  }

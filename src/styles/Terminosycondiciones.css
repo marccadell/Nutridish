@@ -1,0 +1,42 @@
+.terms-container {
+    width: 100%;
+    background-color: var(--clr-white);
+    padding: 2em;
+  }
+  
+  .terms-title {
+    color: var(--clr-btn-hover);
+    text-align: center;
+    margin-bottom: 1em;
+  }
+  
+  .terms-content {
+    font-size: var(--fz-header);
+    color: var(--clr-black);
+    line-height: 1.6;
+    padding: 1em;
+    background-color: #e8e4e6;
+    border-radius: var(--br);
+  }
+  
+  .terms-content h2 {
+    color: var(--clr-btn-hover);
+    margin-top: 1em;
+  }
+  
+  .terms-content p {
+    margin-bottom: 1em;
+    font-size: 2rem;
+  }
+  
+  .terms-content ul {
+    margin-left: 1.5em;
+  }
+  
+  .terms-content a {
+    color: var(--clr-primary);
+  }
+  
+  .terms-content a:hover {
+    color: var(--clr-btn);
+  }

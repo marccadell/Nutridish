@@ -1,9 +1,16 @@
-import React from 'react'
+import React from "react";
+import Meal from "../components/Meal";
+import { AuthContext } from "../contexts/AuthContext";
+import { useContext } from "react";
 
 function Lunch() {
-  return (
-    <div>Lunch</div>
-  )
+  const { currentUser } = useContext(AuthContext);
+
+  const APIEndpoint = !currentUser
+    ? "/recipes/lunch"
+    : `/recipes/lunch/favorites/${currentUser.id}`;
+
+  return <Meal APIEndpoint={APIEndpoint} />;
 }
 
-export default Lunch
+export default Lunch;
