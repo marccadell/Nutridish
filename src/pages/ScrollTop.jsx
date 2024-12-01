@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
-import '../styles/ScrollTop.css'
-import {FaArrowTurnUp} from "react-icons/fa6"
+import {FaArrowTurnUp} from "react-icons/fa6";
+import '../styles/ScrollTop.css';
 
 const ScrollTop = () => {
     const [showTopBtn, setShowTopBtn] = useState(false);
@@ -29,8 +29,6 @@ const ScrollTop = () => {
 
                 )}{" "}
             </div>
-
-
         </>
     )
 }

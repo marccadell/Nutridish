@@ -45,6 +45,9 @@ function Planner() {
     }
   };
 
+// Ejercicio 9 de la práctica de Ignaci
+//    Marc Adell Fernandez
+
   useEffect(() => {
     const handler = (e) => {
       if (!dropRef?.current?.contains(e.target)) {

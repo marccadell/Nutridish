@@ -38,6 +38,7 @@ function Meal({ APIEndpoint }) {
     );
   };
 
+
   const handleTagCheckboxChange = (tag) => {
     if (selectedTags.includes(tag)) {
       setSelectedTags(
